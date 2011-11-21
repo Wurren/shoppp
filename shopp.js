@@ -37,7 +37,7 @@
 				url = "https://www.paypal.com/cgi-bin/webscr?cmd=_cart&upload=1&business=" + settings.email + "&currency_code=" + settings.currency,
 				build = "&item_name_1=" + itemTitle + "&item_number_1=1&quantity_1=1&amount_1=" + itemPrice;
 
-			// Bulding the link, and changing the url to link to Paypal.
+			// Building the link, and changing the url to link to Paypal.
 
 			product.attr("href", url + build);
 
