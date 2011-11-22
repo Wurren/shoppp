@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html>
-<!--
 
-  Created using /
-  Source can be edited via /uriwer/3/edit
-
--->
 <head>
 <meta charset=utf-8 />
 <title>Shoppp Demo</title>
@@ -20,13 +15,13 @@
 <body>
 
 	<!-- Make note of the Class names. These MUST be set to those so Shoppp can grab the title, desciption and Price -->
-	<!-- The Buy Now button can be named whatever class you want, and then called $('.class').shoppp just like below -->
+	<!-- The UL item must be given the commen, and then called $('.class').shoppp just like below -->
   
   <ul class="product">
     <li class="itemTitle">Watchmen</li>
     <li class="itemDesc">Blu ray Movie</li>
     <li class="itemPrice">$5.00</li>
-    <li><a href="#" class="buyNow">Buy Now</a></li>
+    <li><a href="#" class="buynow">Buy Now</a></li>
   </ul>
 
   <ul class="product">
@@ -40,7 +35,7 @@
     <li class="itemTitle">Sucker Punch</li>
     <li class="itemDesc">Blu ray Movie</li>
     <li class="itemPrice">$23.00</li>
-    <li><a href="#" class="buyNow">Buy Now</a></li>
+    <li><a href="#" class="buynow">Buy Now</a></li>
   </ul>
  
 <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -48,9 +43,9 @@
 <script>
 
 $(function() {
-	
+
 	// The hotness
-	$('.buyNow').shoppp({"email" : "email@email.com"});
+	$('.product').shoppp({"email" : "email@email.com"});
 
 });
 
