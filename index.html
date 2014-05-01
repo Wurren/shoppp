@@ -1,0 +1,71 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Shoppp Demo</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="/css/demo.css">
+</head>
+<body>
+
+
+<div class="wrapper">
+
+	<div class="col">
+
+		<ul class="product" data-title="Terminator 2" data-desc="Blu-Ray Movie" data-price="5.00">
+			<li><img src="" alt=""></li>
+			<li><strong>Terminator 2</strong></li>
+			<li>Blu ray Movie</li>
+			<li class="price">$5.00</li>
+			<li><input type="text" name="quantity" data-quantity class="qty" value="1"></li>
+			<li><a href="#" class="btn" data-buy>Buy Now</a></li>
+		</ul>
+		
+	</div>
+
+	<div class="col">
+
+		<ul class="product" data-title="Leather Jacket" data-desc="Size M" data-price="60.00">
+			<li><img src="" alt=""></li>
+			<li><strong>Leather Jacket</strong></li>
+			<li>Size M</li>
+			<li class="price">$60.00</li>
+			<li><input type="text" name="quantity" data-quantity class="qty" value="1"></li>
+			<li><a href="#" class="btn" data-buy>Buy Now</a></li>
+		</ul>
+		
+	</div>
+
+	<div class="col">
+
+		<ul class="product" data-title="Sunglasses" data-desc="Black" data-price="20.00">
+			<li><img src="" alt=""></li>
+			<li><strong>Sunglasses</strong></li>
+			<li>Color: Black</li>
+			<li class="price">$20.00</li>
+			<li><input type="text" name="quantity" data-quantity class="qty" value="1"></li>
+			<li><a href="#" class="btn" data-buy>Buy Now</a></li>
+		</ul>
+		
+	</div>
+
+</div>
+	
+ 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="/src/shoppp.min.js"></script>
+<script>
+	$(function() {
+		// The hotness
+		$('.product').shoppp({"email" : "email@email.com"});
+	});
+</script>
+
+</body>
+</html>
